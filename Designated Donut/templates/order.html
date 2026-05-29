@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/order.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="top-navigation-container-bar">
+        <div class="left-side-container-box-for-logo">
+            <img src="/static/images/Donut_Icon_Logo.png" alt="Donut Destination Icon">
+            <span class="logo-title-text">Donut Destination</span>
+
+        </div>
+        <div class="right-side-nav-options">
+
+            <div class="login-page-action-btn">
+                <i class="ri-user-line"></i>
+                <a class="btn-content-text" href="{{ url_for('login_page') }}">Login</a>
+            </div>
+
+
+            <div class="home-page-action-btn">
+                <i class="ri-home-3-line"></i>
+                <a class="btn-content-text" href="{{ url_for('home_page') }}">Home</a>
+            </div>
+
+            <div class="about-page-action-btn">
+                <i class="ri-info-i"></i>
+                <a class="btn-content-text" href="{{ url_for('about_page') }}">About</a>
+            </div>
+
+            <div class="orders-page-action-btn">
+                <i class="ri-inbox-archive-line"></i>
+                <a class="btn-content-text" href="{{ url_for('order_page') }}">Orders</a>
+            </div>
+
+            <div class="reviews-page-action-btn">
+                <i class="ri-question-answer-line"></i>
+                <a class="btn-content-text" href="{{ url_for('review_page') }}">Reviews</a>
+            </div>
+
+
+            <i class="ri-shopping-cart-line"></i>
+
+        </div>
+    </div>
+
+
+
+    <div class="total2">
+        <div class="top-row">
+            <div class="black-donut">
+                <img src="/static/images/blackdonut.jpg" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+
+            <div class="blue-donut">
+                <img src="/static/images/bluedonut.jpg" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+
+            <div class="pink-donut">
+                    <img src="/static/images/pinkdonut.jpg" width="200px" height="200px">
+                    <button>Add</button>
+            </div>
+
+            <div class="green-donut">
+                <img src="/static/images/greendonut.jpg" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="white-donut">
+                <img src="/static/images/whitedonut.webp" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+
+            <div class="purple-donut">
+                <img src="/static/images/purpledonut.jpg" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+
+
+            <div class="yellow-donut">
+                <img src="/static/images/yellowdonut.webp" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+
+            <div class="brown-donut">
+                <img src="/static/images/browndonut.jpg" width="200px" height="200px">
+                <button>Add</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-navigation-container-bar {
+    background-color: #1daee7;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+    align-items: center;
+}
+
+.left-side-container-box-for-logo {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.left-side-container-box-for-logo img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+}
+
+.logo-title-text {
+    font-size: 1.45rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.25s ease;
+}
+
+.logo-title-text:hover {
+    color: rgb(61, 61, 61);
+}
+
+.right-side-nav-options {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.login-page-action-btn {
+    text-decoration: bold;
+    padding: 15px 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aaee2;
+    border-radius: 4px;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.25s ease, border 0.35s ease;
+    box-shadow: 0 4px 8px rgba(82, 82, 82, 0.10);
+}
+
+.home-page-action-btn,
+.about-page-action-btn,
+.orders-page-action-btn,
+.reviews-page-action-btn {
+    width: fit-content;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2aaee2;
+    border-radius: 4px;
+    padding: 10px 15px;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.25s ease, border 0.35s ease;
+    box-shadow: 0 4px 8px rgba(82, 82, 82, 0.10);
+}
+
+.login-page-action-btn:hover,
+.home-page-action-btn:hover,
+.about-page-action-btn:hover,
+.orders-page-action-btn:hover,
+.reviews-page-action-btn:hover {
+    background-color:     rgba(238, 238, 238, 0.18);
+    border: 1px solid #ffffff;
+}
+
+.ri-user-line,
+.ri-home-3-line,
+.ri-inbox-archive-line,
+.ri-info-i,
+.ri-question-answer-line {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.btn-content-text {
+    font-size: 1.05rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ri-shopping-cart-line {
+    background-color: #f1f1f1;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(141, 141, 141, 0.15);
+    box-shadow: 0 4px 8px rgba(82, 82, 82, 0.25);
+    cursor: pointer;
+    font-size: 1.15rem;
+    transition: background-color 0.25s ease, border 0.35s ease, color 0.35s ease;
+}
+
+.ri-shopping-cart-line:hover {
+    background-color: rgba(238, 238, 238, 0.18);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+section {
+    background: url('/static/images/background.png') no-repeat;
+    background-image: url(/static//images/background.png);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.main-container {
+    border: 2% solid black;
+    text-align: center;
+    padding: 0.1% 0.1%;
+    border-radius: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    display: flex;
+    margin: 0;       
+    height: 35vh;           
+    width: 55vw;            
+    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    gap: 30px;
+
+}
+
+.description-txt {
+    margin: 0;
+    font-size:  150%;    
+}
+
+.subtitle-txt {
+    font-size:  400%;     
+    color: black;            
+    text-transform: uppercase;
+    margin-bottom: 10px;   
+    letter-spacing: 2px;     
+}

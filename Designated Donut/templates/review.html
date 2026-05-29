@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Designated Donuts</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='/static/review.css'>
+  <script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="top-navigation-container-bar">
+        <div class="left-side-container-box-for-logo">
+            <img src="/static/images/Donut_Icon_Logo.png" alt="Donut Destination Icon">
+            <span class="logo-title-text">Donut Destination</span>
+
+        </div>
+        <div class="right-side-nav-options">
+
+            <div class="login-page-action-btn">
+                <i class="ri-user-line"></i>
+                <a class="btn-content-text" href="{{ url_for('login_page') }}">Login</a>
+            </div>
+
+
+            <div class="home-page-action-btn">
+                <i class="ri-home-3-line"></i>
+                <a class="btn-content-text" href="{{ url_for('home_page') }}">Home</a>
+            </div>
+
+            <div class="about-page-action-btn">
+                <i class="ri-info-i"></i>
+                <a class="btn-content-text" href="{{ url_for('about_page') }}">About</a>
+            </div>
+
+            <div class="orders-page-action-btn">
+                <i class="ri-inbox-archive-line"></i>
+                <a class="btn-content-text" href="{{ url_for('order_page') }}">Orders</a>
+            </div>
+
+            <div class="reviews-page-action-btn">
+                <i class="ri-question-answer-line"></i>
+                <a class="btn-content-text" href="{{ url_for('review_page') }}">Reviews</a>
+            </div>
+
+
+            <i class="ri-shopping-cart-line"></i>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="total">
+        <div class="rev-section">
+
+        <h2 class="title">Our Guests Love Us</h2>
+        <p class="note">Be honest and respectful. Do not include offensive, abusive, or threatening language.</p>
+
+        <div class="reviews">
+
+        <div class="review">
+            <div class="head-review">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+            </div>
+            <div class="body-review">
+            <div class="name-review">Nathan D.</div>
+            <div class="place-review">Germany</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="desc-review">Designated Donuts is amazing! The donuts are always fresh, delicious, and beautifully made. Great flavors and friendly service—definitely!</div>
+        </div>
+        </div>
+        <div class="review">
+            <div class="head-review">
+                <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+            </div>
+            <div class="body-review">
+                <div class="name-review">Mary Will</div>
+                <div class="place-review">Paris</div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+            </div>
+            <div class="desc-review">Love Designated Donuts! Every donut is tasty and fresh, and the staff are super friendly. Highly recommend for anyone with a sweet tooth!</div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="head-review">
+                <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+            </div>
+            <div class="body-review">
+                <div class="name-review">Kevin Tuck</div>
+                <div class="place-review">New York</div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="desc-review">Designated Donuts never disappoints! The donuts are delicious, the flavors are creative, and the service is always friendly. A must-try!</div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+        <button class="review-button"onclick="window.location.href='{{ url_for('feedback_page') }}'">
+        Add a Review
+        </button>
+    </div>
+
+
+</body>
+</html>
