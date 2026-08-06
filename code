@@ -1,0 +1,11 @@
+        <div class="buttons">
+            <div>
+                <button id="Submit">Submit</button>
+            </div>
+    
+            <br>
+    
+            <div>
+                <button class="leave"onclick="window.location.href='{{ url_for('review_page') }}'">Leave</button>
+            </div>            
+        </div>
