@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>My first website</title>
+    <link rel="stylesheet" href="/static/feedback.css">
+</head>
+<body>
+<div class="total">
+
+<form id="feedbackForm">
+    <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">birthdate:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+    
+        <br>
+
+        <div>
+            <label for="reivew">review:</label>
+            <textarea class="review" name="review" rows="5" cols="43" required></textarea>
+        </div>
+
+        <br>
+
+        <div class="buttons">
+            <div>
+                <button id="Submit">Submit</button>
+            </div>
+    
+            <br>
+    
+            <div>
+                <button class="leave"onclick="window.location.href='{{ url_for('review_page') }}'">Leave</button>
+            </div>            
+        </div>
+
+</form>
+</div>
+
+<script src="/static/feedback.js"></script>
+</body>
+</html>
