@@ -12,7 +12,7 @@ designated_donut.secret_key = os.urandom(24)
 
 designated_donut.config["SESSION_PERMANENT"] = False
 
-DATABASE = "Designated_Donut.db"
+DATABASE = "Designated Donut web/Designated_Donut.db"
 
 @designated_donut.route("/login", methods=["GET", "POST"])
 def login_page():

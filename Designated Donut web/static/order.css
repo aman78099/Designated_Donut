@@ -308,12 +308,6 @@ body {
     flex-direction: column;
     gap: 44px;
     padding: 50px;
-    background:
-        radial-gradient(
-            rgba(29, 174, 231, 0.04),
-            transparent 30%
-        ),
-        #f4f7f9;
 }
 
 
